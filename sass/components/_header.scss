@@ -11,6 +11,7 @@
 }
 
 .header__container {
+    @extend %container;
     display: flex;
     align-items: center;
 }
@@ -27,6 +28,7 @@
 }
 
 .navigation__list {
+    @extend %list;
     display: flex;
     margin: 0 0 0 93px;
     padding: 0;
@@ -74,6 +76,7 @@
 }
 
 .header-contact {
+    @extend %list;
     display: flex;
     margin-left: auto;
     padding: 0;

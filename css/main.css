@@ -1,4 +1,4 @@
-body {
+.body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 80px;
@@ -9,7 +9,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.container {
+.features__container, .header__container {
   width: 1200px;
   height: 80px;
   padding-left: 15px;
@@ -18,11 +18,11 @@ body {
   margin-right: auto;
 }
 
-.list {
+.features__list, .header-contact, .navigation__list {
   list-style: none;
 }
 
-.title {
+.features__title {
   margin-top: 0;
   margin-bottom: 50px;
   color: #212121;
@@ -31,7 +31,7 @@ body {
   text-align: center;
 }
 
-.section {
+.features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -221,4 +221,65 @@ body {
 }
 .hero__button:hover, .hero__button:focus {
   background-color: #188CE8;
+}
+
+.features__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.features__item {
+  width: calc((100% - 120px) / 4);
+}
+.features__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+}
+
+.features__name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #212121;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71;
 }/*# sourceMappingURL=main.css.map */
