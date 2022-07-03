@@ -93,7 +93,7 @@
     
     transition: background-color 250ms $time-function;
 
-    &:hover, &focus {
+    &:hover, &:focus {
         background-color: $main-active-color;
         outline: transparent;
     }
