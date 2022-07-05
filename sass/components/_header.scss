@@ -61,6 +61,7 @@
 
 .navigation__link--active {
     position: relative;
+    color: $main-active-color;
 
     &::after {
         content: '';

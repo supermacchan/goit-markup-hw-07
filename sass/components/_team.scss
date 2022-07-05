@@ -18,7 +18,7 @@
     padding: 0;
 }
 
-.member {
+.team__member {
     width: calc((100% - 120px) / 4);
     padding-bottom: 30px;
     
@@ -31,17 +31,17 @@
         }
 }
 
-.member__photo {
+.team__photo {
     display: block;
     max-width: 100%;
 }
 
-.member__card {
+.team__card {
     padding-top: 30px;
     padding-bottom: 0;
 }
 
-.member__name {
+.team__name {
     color: $text-heading-color;
     margin-top: 0;
     margin-bottom: 10px;
@@ -52,53 +52,11 @@
     text-align: center;
 }
 
-.member__job {
+.team__job {
     margin-top: 0;
     margin-bottom: 16px;
     
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-}
-
-.social-contact {
-    @extend %list;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    margin: 0;
-    padding: 0;
-}
-
-.social-contact__item:not(:last-child) {
-    margin-right: 10px;
-}
-
-.social-contact__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 44px;
-    height: 44px;
-
-    border-radius: 50%;
-
-    text-decoration: none;
-    color: $icon-color;
-    background-color: $main-bg-color;
-
-    transition: background-color 250ms $time-function,
-    color 250ms $time-function;
-
-    &:hover, &:focus {
-        background-color: $main-active-color;
-        color: $dark-bg-text;
-        outline: transparent;
-    }
-}
-
-.social-contact__icon {
-    fill: currentColor;
 }

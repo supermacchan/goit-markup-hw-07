@@ -1,14 +1,3 @@
-.body {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 80px;
-  background-color: #FFFFFF;
-  color: #757575;
-  font-family: "Roboto", "Arial", "Helvetica", sans-serif;
-  font-style: normal;
-  letter-spacing: 0.03em;
-}
-
 .filters__container, .footer__container, .clients__container, .team__container, .activities__container, .features__container, .header__container {
   width: 1200px;
   padding-left: 15px;
@@ -33,6 +22,17 @@
 .filters, .clients, .team, .activities, .features {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.body {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+  background-color: #FFFFFF;
+  color: #757575;
+  font-family: "Roboto", "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  letter-spacing: 0.03em;
 }
 
 .logo {
@@ -121,6 +121,7 @@
 
 .navigation__link--active {
   position: relative;
+  color: #2196F3;
 }
 .navigation__link--active::after {
   content: "";
@@ -351,7 +352,7 @@
   padding: 0;
 }
 
-.member {
+.team__member {
   width: calc((100% - 120px) / 4);
   padding-bottom: 30px;
   background-color: #FFFFFF;
@@ -359,21 +360,21 @@
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.member:not(:last-child) {
+.team__member:not(:last-child) {
   margin-right: 30px;
 }
 
-.member__photo {
+.team__photo {
   display: block;
   max-width: 100%;
 }
 
-.member__card {
+.team__card {
   padding-top: 30px;
   padding-bottom: 0;
 }
 
-.member__name {
+.team__name {
   color: #212121;
   margin-top: 0;
   margin-bottom: 10px;
@@ -383,7 +384,7 @@
   text-align: center;
 }
 
-.member__job {
+.team__job {
   margin-top: 0;
   margin-bottom: 16px;
   font-size: 16px;
@@ -868,6 +869,39 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
+.modal__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  background-color: #2196F3;
+  color: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__submit:hover, .modal__submit:focus {
+  background-color: #188CE8;
+}
+
 .policy {
   position: relative;
   display: -webkit-box;
@@ -953,39 +987,6 @@
   text-decoration: none;
 }
 
-.modal__submit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  cursor: pointer;
-  width: 200px;
-  height: 50px;
-  padding: 0;
-  background-color: #2196F3;
-  color: #FFFFFF;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 0;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__submit:hover, .modal__submit:focus {
-  background-color: #188CE8;
-}
-
 .filters__title {
   position: absolute;
   width: 1px;
@@ -1037,6 +1038,14 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters__button:hover, .filters__button:focus {
+  background-color: #2196F3;
+  color: #FFFFFF;
+  outline: transparent;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filters__button--active {
   background-color: #2196F3;
   color: #FFFFFF;
   outline: transparent;
